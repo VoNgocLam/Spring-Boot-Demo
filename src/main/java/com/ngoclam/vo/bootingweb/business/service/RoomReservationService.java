@@ -80,6 +80,7 @@ public class RoomReservationService {
     }
 
     public RoomReservation insertReservation(Reservation reservation){
+        reservation.setReservationId(null);
         Reservation _reservation = this.reservationRepository.save(reservation);
         RoomReservation roomReservation = new RoomReservation();
         Room room = this.roomRepository.findById(_reservation.getRoomId()).get();
