@@ -122,8 +122,8 @@ public class GuestService {
     }
 
     public Guest insertGuest(Guest guest){
-        Guest _guest = new Guest();
-        _guest = this.guestRepository.save(guest);
+        guest.setGuestId(null);
+        Guest _guest = this.guestRepository.save(guest);
         return _guest;
     }
 
