@@ -1,10 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Welcome to London Hotel</title>
 </head>
 <body>
-    <h2>Hello world</h2>
+    <div class="box-header content">
+        <h1 class="single-title content">Spring RESTful Web Service With Swagger 2</h1>
+    </div>
+    <div class="box-body content">
+        <article class="container-lg">
+            <h2 class ="content"><strong>Overview</strong></h2>
+            <p>
+                This project build a Spring Boot RESTful API with Maven that not only use Spring Data JPA to interact with PostgreSQL database but also use Swagger 2 for a Spring REST web service, using the Springfox implementation of the Swagger 2 specification.
+            </p>
+            <ul>
+                <li>
+                    <a href="https://booting-web.herokuapp.com/swagger-ui/">Swagger UI</a>
+                </li>
+            </ul>
+        </article>
+    </div>
 </body>
+<style>
+    .content {
+        height: auto;
+        margin: auto auto -1px;
+    }
+    .header{
+        color: #24292f;
+        line-height: 1.42857143;
+        line-height: 1;
+    }
+    h1 {
+        font-family: Raleway;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: -1.1px;
+    }
+    h2{
+        font-family: Helvetica;
+        font-size: 29px;
+    }
+    p{
+        font-family: Raleway;
+        font-size: 20px;
+
+    }
+    a{
+        color: #267438;
+        font-family: Raleway;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .single-title{
+        font-size: 64px;
+        font-weight: 300;
+        color: #333;
+        letter-spacing: -1.5px;
+        margin-top: 60px;
+        max-width: 800px;
+    }
+    .box-header{
+        max-width:1000px;
+        background-color: #f6f8fa;
+        border-color: #d0d7de;
+        border-style: solid;
+        border-width: 1px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    .box-body{
+        max-width: 1000px;
+        border: 1px solid #d0d7de;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+    .container-lg{
+        max-width: 900px;
+        margin: 20px auto 10px;
+    }
+</style>
 </html>
